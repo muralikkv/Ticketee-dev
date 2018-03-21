@@ -20,5 +20,11 @@ click_button "Create Project"
 page.should have_content "Project has been created"
 #expect(page).to have_content('Project has been created')
 
+project = Project.find_by(name: "Sublime Text 3")
+# expect(page.current_url).to eq project_url(project)
+
+title = "\n    Subline text 3 - Projects - Ticketee\n"
+page.should have_title title
+
 end
 end
