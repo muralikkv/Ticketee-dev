@@ -35,15 +35,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'capybara','~>2.13'
-  gem 'rspec-rails','2.8.0'
-  gem 'rake','~> 11.0'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
+  gem 'rspec-rails', '2.8.0'
+  gem 'capybara' , '~>2.13'
+  gem 'rake', '< 11.0'
+
 end
+
 group :test do
-	gem 'test-unit'
+  gem 'test-unit'
+  gem "factory_girl_rails", "~> 4.5"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
